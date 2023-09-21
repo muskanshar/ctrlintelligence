@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="b.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+    
+   .background-image {
+  background: url('./Welcome\ to\ Chandigarh.png') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 70px; /* Adjust the top position to accommodate the navbar height */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px); /* Adjust the height to cover the area below the navbar */
+}
+
+}
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: background-color 0.3s ease-in-out;
+        position: sticky;
+      }
+      .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    
+      .navbar-text .btn-link {
+        font-family: 'Pacifico', cursive;
+        text-decoration: none;
+      }
+      .navbar-nav .nav-item {
+        border: 1.75px solid black;
+        border-radius: 20px;
+        padding: 3px 8px;
+        font-size: 15px;
+        margin: 0 5px 5px 0; 
+      }
+      .navbar-nav .nav-item a.nav-link {
+        padding: 0px;
+      }
+      .dropdown-menu {
+        transition: all 0.3s ease;
+      }
+      .nav-item:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+      }
+      .navbar-nav {
+        margin-right: auto;
+      }
+      .navbar-form {
+        display: flex;
+      }
+      .navbar-form .form-control {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .navbar-form .btn {
+        border: 1.75px solid black;
+        border-radius: 20px;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+      }
+      .navigation-indicators {
+        list-style: none;
+        padding: 0;
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .navigation-indicators li {
+        margin-bottom: 10px;
+      }
+      
+      .navigation-indicators a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #555; 
+        border-radius: 50%;
+      }
+      .navigation-indicators a.active {
+        background-color: #ff6600;
+      }
+      .p1{
+        padding-top:60px ;
+      }
+      </style>
+  </head>
+<body>
+  
+  <div class="background-image"></div>
+  <section id="nav-bar">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-text mr-auto">
+          <a href="front page.html" class="btn btn-link">भारत</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Front page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About Us.html">About us</a> 
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./shop and fun.html">Travel</a></li>
+                <li><a class="dropdown-item" href="./Eat.html">Food</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="./Relax.html">Relax</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./project.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navigation-indicators">
+            <li><a href="Front page.html"></a></li>
+            <li><a href="About Us.html"></a></li>
+            <li><a href="#section3"></a></li>
+            <!-- Add indicators for each section -->
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0 navbar-form">
+            <div class="row">
+              <div class="col">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+                    
+  
+
+        </div>
+      </div>
+      
+    </nav>
+    <div class="background">
+      <!-- Your background content here -->
+      <button class="custom-button">Button 1</button>
+      <button class="custom-button">Button 2</button>
+    </div>
+  </section>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+       
+           
+
+
+            <!-- <section id="feed" class="feed_wrapper">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="row-sm-12 section-title text-center mb-5">
+                      
+                    <b>  <h3 style="color: rgb(5, 5, 5); font-size: 70px;font-weight: 500; padding-top: 2%;"></h3></b>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div  class="col-md-4 mb-4 mb-lg-0">
+                      <div class="feed-items">
+                        <img style="height: 60vh; width: 100vw;" src="shop.jpg" class="img-fluid">
+                        <div class="feed-item-wrap">
+                          <div class="feed-content">
+                            <h5 id="travel" class="text-white mb-lg-5 text-decoration-underline"> <a style="color: whitesmoke;" href="shop and fun.html">Life is nothing without shopping..</a> </h5>
+                            <p class="text-white">Welcome to our Shop and Fun page! Here, we have compiled a list of the best places to shop and have fun in Chandigarh. Whether you're looking for the latest fashion trends or a fun activity to do with friends and family, we have got you covered.
+
+                              From trendy malls to bustling markets, Chandigarh has a lot to offer in terms of shopping. You can find everything from designer clothes to unique handicrafts. Our list of top shopping destinations will help you find exactly what you're looking for.</p>
+                            <p class="text-white fw-bold mt-lg-4">Life is nothing without shopping..</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-lg-0">
+                      <div class="feed-items">
+                        <img style="height: 60vh; width: 100vw;" src="Food.jpg" class="img-fluid">
+                        <div class="feed-item-wrap">
+                          <div class="feed-content">
+                            <h5 id="food" class="text-white mb-lg-5 text-decoration-underline"> <a style="color: whitesmoke;" href="Eat.html">Food makes everything worth while </a></h5>
+                            <p class="text-white">Welcome to our Eating Places page! Chandigarh is a food lover's paradise, with a wide variety of culinary delights to satisfy every palate. From street food to fine dining, there's something for everyone in this city.
+
+                              Our list of eating places includes the best restaurants, cafes, and street food vendors in Chandigarh. Whether you're in the mood for traditional Punjabi cuisine or international flavors, our list has got you covered.</p>
+                            <p class="text-white fw-bold mt-lg-4">food=life</p>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-lg-0">
+                      <div class="feed-items">
+                        <img style="height: 60vh; width: 100vw;" src="4.jpg" class="img-fluid">
+                        <div class="feed-item-wrap">
+                          <div class="feed-content">
+                            <h5 id="food" class="text-white mb-lg-5 text-decoration-underline"><a style="color: whitesmoke;" href="Relax.html"> Relax </a></h5>
+                            <p class="text-white">Welcome to our Tourist Places page! Chandigarh is a city with a rich history and culture, and there are many fascinating tourist attractions to explore here.
+
+                              Our list of tourist places includes the most popular and must-see destinations in Chandigarh. From iconic landmarks like the Rock Garden and Sukhna Lake to historical sites like the Capitol Complex and Government Museum and Art Gallery, there's something for everyone to enjoy.</p>
+                            <p class="text-white fw-bold mt-lg-4">Places you dont want to miss when you are in the city</p> 
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section> -->
+
+              
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="b.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: background-color 0.3s ease-in-out;
+        position: sticky;
+      }
+      .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    
+      .navbar-text .btn-link {
+        font-family: 'Pacifico', cursive;
+        text-decoration: none;
+      }
+      .navbar-nav .nav-item {
+        border: 1.75px solid black;
+        border-radius: 20px;
+        padding: 3px 8px;
+        font-size: 15px;
+        margin: 0 5px 5px 0; 
+      }
+      .navbar-nav .nav-item a.nav-link {
+        padding: 0px;
+      }
+      .dropdown-menu {
+        transition: all 0.3s ease;
+      }
+      .nav-item:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+      }
+      .navbar-nav {
+        margin-right: auto;
+      }
+      .navbar-form {
+        display: flex;
+      }
+      .navbar-form .form-control {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .navbar-form .btn {
+        border: 1.75px solid black;
+        border-radius: 20px;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+      }
+      .navigation-indicators {
+        list-style: none;
+        padding: 0;
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .navigation-indicators li {
+        margin-bottom: 10px;
+      }
+      
+      .navigation-indicators a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #555; 
+        border-radius: 50%;
+      }
+      .navigation-indicators a.active {
+        background-color: #ff6600;
+      }
+      </style>
+</head>
+
+<body>
+  <section id="nav-bar">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-text mr-auto">
+          <a href="front page.html" class="btn btn-link">भारत</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Front page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About Us.html">About us</a> 
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./shop and fun.html">Travel</a></li>
+                <li><a class="dropdown-item" href="./Eat.html">Food</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="./Relax.html">Relax</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./project.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navigation-indicators">
+            <li><a href="Front page.html"></a></li>
+            <li><a href="About Us.html"></a></li>
+            <li><a href="#section3"></a></li>
+            <!-- Add indicators for each section -->
+          </ul>
+
+
+          <form class="form-inline my-2 my-lg-0 navbar-form">
+            <div class="row">
+              <div class="col">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <section class="aboutus" id="aboutus">
+        <div class="outing">
+            <div class="box">
+                <div class="box1">
+                    <div class="content">
+                        <h1>WELCOME</h1>
+                        <p>Welcome to our website, dedicated to showcasing the best of Chandigarh's local tourist attractions. Our team of travel enthusiasts is committed to helping visitors make the most of their time in this beautiful city.
+
+                          Chandigarh, also known as the "City Beautiful," is a unique blend of modern architecture and natural beauty. From the iconic Rock Garden to the serene Sukhna Lake, there's something for everyone in Chandigarh.
+                          
+                          Our website provides visitors with insider information on the best places to visit, the tastiest local cuisine to try, and the most exciting activities to experience. We believe that the best way to explore Chandigarh is to immerse yourself in its culture, and we're here to help you do just that.
+                          
+                          Whether you're a first-time visitor or a seasoned traveler, our website is your ultimate guide to Chandigarh's local tourist attractions. We strive to provide accurate and up-to-date information to help you plan your trip and make the most of your time here.
+                          
+                          Thank you for choosing our website as your guide to Chandigarh. We hope you enjoy exploring this beautiful city as much as we do!</p>
+                    </div>
+                </div>
+                <div class="box2">
+                </div>
+            </div>
+            <div class="containers">
+                <div class="container1" id="cont">
+                    <h1>ABOUT US</h1>
+                </div>
+                <div class="container2" id="cont">
+                  Chandigarh is a city like no other, with its unique blend of modern architecture and natural beauty. It is known for its cleanliness, greenery, and vibrant culture. However, we understand that exploring a new city can be overwhelming, which is why we created this website to provide visitors with all the information they need to make their trip to Chandigarh a success.
+
+                  Our team is made up of locals and seasoned travelers who have explored every corner of the city and have a wealth of knowledge to share. We have put together comprehensive guides on the best places to visit, the most delicious local cuisine to try, and the most exciting activities to experience in Chandigarh.
+                  
+                  Our website is designed to make planning your trip as easy as possible. You can find information on top tourist destinations, as well as off-the-beaten-path gems that only locals know about. We also provide tips on transportation, accommodation, and other essential aspects of your trip.
+                  
+                  We strive to provide accurate and up-to-date information to help you make the most of your time in Chandigarh. Our goal is to help visitors create unforgettable memories and leave with a newfound appreciation for this incredible city.
+                  
+                  Thank you for choosing our website as your guide to Chandigarh. We hope to inspire you to explore every corner of this beautiful city and experience all that it has to offer.
+                </div>
+                <div class="container3" id="cont">
+                </div>
+            </div>
+            <!-- <div class="box">
+                <div class="box2">
+                </div> -->
+                <!-- <div class="box1">
+                    <div class="content">
+                        <h1>WELCOME</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil repellat at suscipit, iure, maxime, ratione eius nostrum rem enim ducimus. Praesentium quaerat vitae fuga voluptate aliquid sunt, eveniet unde officia. Dolorem
+                            culpa provident qui officiis mollitia esse atque incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatum aut ab reprehenderit soluta voluptatem, voluptas pariatur iure, vel repellendus quidem eius
+                            earum? Obcaecati nemo animi asperiores facere molestiae dicta.</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+  
+
+                <!-- <label for="s3" id="slide3">
+        <div class="card">
+          <div class="image">
+            <img src="divyanshu.jpeg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Divyanshu</span>
+            <span class="lorem">Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit sit ansd . Nullam
+              lorem. Nulla karma stellus</span>
+          </div>
+        </div>
+      </label>
+
+                <label for="s4" id="slide4">
+        <div class="card">
+          <div class="image">
+            <img src="ananya.jpeg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Ananya</span>
+            <span class="lorem">Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet vel velit sit ansd. Nulla eu
+              sodales stellus</span>
+          </div>
+        </div>
+      </label>
+
+                <label for="s5" id="slide5">
+        <div class="card">
+          <div class="image">
+            <img src="muskan.jpeg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Muskan</span>
+            <span class="lorem">Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd . Nullam
+              lorem. Nulla eu
+              sodales stellus</span>
+          </div>
+        </div>
+      </label> -->
+            </div>
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
